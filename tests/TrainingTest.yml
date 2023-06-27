@@ -1,0 +1,25 @@
+SilverStripe\Security\Member:
+  memberInSesson:
+    Email: memberInSesson@letsco.co
+  memberOffSession:
+    Email: memberOffSession@letsco.co
+Letsco\Training\TrainingDay:
+  day1:
+    Date: 2023-07-01
+    StartTimeMorning: 8:30
+    EndTimeMorning: 12:00
+    StartTimeAfternoon: 13:00
+    EndTimeAfternoon: 16:30
+  day2:
+    Date: 2023-07-02
+    StartTimeMorning: 10:00
+    EndTimeMorning: 13:00
+  dayOff:
+    Date: 2022-01-01
+    StartTimeMorning: 7:00
+    EndTimeMorning: 19:00
+Letsco\Training\TrainingSession:
+  Test1:
+    Title: Session Test 1
+    Members: =>SilverStripe\Security\Member.memberInSesson
+    Days: =>Letsco\Training\TrainingDay.day1,=>Letsco\Training\TrainingDay.day2

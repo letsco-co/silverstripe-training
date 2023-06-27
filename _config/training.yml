@@ -1,0 +1,15 @@
+---
+Name: training
+---
+# LeftAndMain:
+#   extra_requirements_css:
+#     - training/css/admin.css
+SilverStripe\Control\Director:
+  rules:
+    'training//$Action/$ID/$Name': 'Letsco\Training\TrainingController'
+Member:
+  extensions:
+    [TrainingMember]
+SiteConfig:
+  extensions:
+    [TrainingSiteConfig]
