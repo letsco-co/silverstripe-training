@@ -1,6 +1,6 @@
 <?php
 
-namespace Letsco\Training\Test;
+namespace Letsco\Training\Tests;
 
 use SilverStripe\Dev\SapphireTest;
 
